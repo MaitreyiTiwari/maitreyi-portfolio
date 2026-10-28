@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maitreyi Tiwari | M.Tech Computational & Data Science</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cute SVG Doodles Background Layer -->
+    <div class="doodles" id="doodles"></div>
+
+    <!-- Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">Maitreyi<span>Tiwari</span></a>
+
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+            <button class="mobile-menu" id="mobileMenu" aria-label="Toggle menu">☰</button>
+
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#cv">CV</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="avatar-wrap">
+                    <!-- Placeholder avatar (replace with your photo later) -->
+                    <div class="avatar-placeholder" aria-label="Profile picture">
+                        <svg width="130" height="130" viewBox="0 0 130 130" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#F4C2C2;stop-opacity:0.4" />
+                                    <stop offset="100%" style="stop-color:#F4C2C2;stop-opacity:0.1" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="65" cy="65" r="55" fill="url(#grad1)" />
+                            <circle cx="65" cy="65" r="50" fill="none" stroke="#F4C2C2" stroke-width="3" opacity="0.6"/>
+                            <path d="M45 65 Q65 35 85 65" fill="none" stroke="#F4C2C2" stroke-width="2" opacity="0.5"/>
+                            <circle cx="57" cy="57" r="3.5" fill="#F4C2C2"/>
+                            <circle cx="73" cy="57" r="3.5" fill="#F4C2C2"/>
+                            <path d="M57 78 Q65 92 73 78" fill="none" stroke="#F4C2C2" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <div class="doodle-heart"></div>
+                    </div>
+                </div>
+
+                <h1>Hi, I'm <span>Maitreyi Tiwari</span></h1>
+                <p class="hero-title">M.Tech in Computational &amp; Data Science</p>
+                <p class="hero-sub">Indian Institute of Science · Bengaluru, Karnataka</p>
+                <p class="hero-intro">AI/ML enthusiast passionate about LLMs, Edge-AI, NLP, and building intelligent systems that solve real-world problems.</p>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#cv" class="btn btn-outline">View My CV</a>
+                </div>
+
+                <div class="hero-social">
+                    <a href="https://linkedin.com/in/maitreyi-tiwari-574900264" target="_blank" aria-label="LinkedIn">in</a>
+                    <a href="https://github.com/MaitreyiTiwari/MaitreyiTiwari" target="_blank" aria-label="GitHub">🐙</a>
+                    <a href="mailto:maitreyitiwari18@gmail.com" aria-label="Email">✉</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About <span class="accent">Me</span></h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I'm currently pursuing my <strong>M.Tech in Computational and Data Science</strong> at the <strong>Indian Institute of Science (IISc), Bengaluru</strong>. My journey began with a B.Tech in Computer Engineering from GB Pant University, where I graduated with a CGPA of 8.10.</p>
+                    <p>I love working at the intersection of <strong>Machine Learning, NLP, and Edge-AI</strong>. Whether it's fine-tuning LLMs, building GraphRAG systems, or deploying TinyML models on microcontrollers, I enjoy turning research into practical applications.</p>
+                    <p>Outside of code, you'll find me on the basketball court or organizing technical events for my department.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card"><div class="stat-num">2+</div><div class="stat-label">Internships</div></div>
+                    <div class="stat-card"><div class="stat-num">11+</div><div class="stat-label">Projects</div></div>
+                    <div class="stat-card"><div class="stat-num">99.66</div><div class="stat-label">GATE Percentile</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education (Hover Cards) -->
+    <section id="education" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <p class="section-desc">Hover over a card to see more details.</p>
+            <div class="edu-grid">
+                <!-- IISc -->
+                <div class="edu-card" data-edu="iisc">
+                    <div class="edu-front">
+                        <h3>Indian Institute of Science</h3>
+                        <p class="edu-degree">M.Tech - Computational and Data Science</p>
+                        <p class="edu-period">2025 – Present · Bengaluru</p>
+                        <p class="edu-cgpa">CGPA: 8.6</p>
+                    </div>
+                    <div class="edu-back">
+                        <h3>Indian Institute of Science</h3>
+                        <p>Currently researching Hypergraph Neural Networks and over-squashing remedies via curvature-guided hypergraph rewiring (M.Tech Thesis, Ongoing).</p>
+                        <ul>
+                            <li><strong>Fellowship:</strong> IISc-Mallika Women MTech Fellowship</li>
+                            <li><strong>Role:</strong> Student Representative, Gymkhana Students Affairs Committee (2026)</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- GB Pant -->
+                <div class="edu-card" data-edu="gbpuat">
+                    <div class="edu-front">
+                        <h3>GB Pant University of Agriculture and Technology</h3>
+                        <p class="edu-degree">B.Tech - Computer Engineering</p>
+                        <p class="edu-period">2021 – 2025 · Pantnagar, Uttarakhand</p>
+                        <p class="edu-cgpa">CGPA: 8.10</p>
+                    </div>
+                    <div class="edu-back">
+                        <h3>GB Pant University</h3>
+                        <p>Foundational studies in Computer Engineering with a focus on ML, Systems, and Theory.</p>
+                        <ul>
+                            <li><strong>Technical Head</strong>, Interface: Branch Chapter of CSE (2022–2025)</li>
+                            <li><strong>Member</strong>, National Service Scheme (NSS) (2022–2024)</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- School 12th -->
+                <div class="edu-card" data-edu="school12">
+                    <div class="edu-front">
+                        <h3>Cynthia Senior Secondary School</h3>
+                        <p class="edu-degree">Intermediate (12th Grade)</p>
+                        <p class="edu-period">2021 · Haldwani, Uttarakhand</p>
+                        <p class="edu-cgpa">Percentage: 97.2%</p>
+                    </div>
+                    <div class="edu-back">
+                        <h3>Cynthia Senior Secondary School</h3>
+                        <p>Science stream with strong academic performance.</p>
+                    </div>
+                </div>
+                <!-- School 10th -->
+                <div class="edu-card" data-edu="school10">
+                    <div class="edu-front">
+                        <h3>Cynthia Senior Secondary School</h3>
+                        <p class="edu-degree">High School (10th Grade)</p>
+                        <p class="edu-period">2019 · Haldwani, Uttarakhand</p>
+                        <p class="edu-cgpa">Percentage: 99%</p>
+                    </div>
+                    <div class="edu-back">
+                        <h3>Cynthia Senior Secondary School</h3>
+                        <p>Perfect academic record with 99% in board examinations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Skills &amp; Tools</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Machine Learning &amp; AI</h3>
+                    <div class="skill-tags">
+                        <span>Machine Learning</span><span>Edge-AI</span><span>NLP</span><span>LLMs</span><span>PyTorch</span><span>TensorFlow</span><span>Keras</span><span>Scikit-learn</span><span>GraphRAG</span><span>Neo4j</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span>Python</span><span>C</span><span>SQL</span><span>MicroPython</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Systems &amp> Tools</h3>
+                    <div class="skill-tags">
+                        <span>Git</span><span>DBMS</span><span>DSA</span><span>Operating Systems</span><span>Computer Networks</span><span>Compiler Design</span><span>Streamlit</span><span>LangGraph</span><span>Spark</span><span>Databricks</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Math &amp; Theory</h3>
+                    <div class="skill-tags">
+                        <span>Linear Algebra</span><span>Computer Architecture</span><span>Probability &amp; Statistics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>AI Intern</h3>
+                        <p class="company">Honeywell Technologies · Bengaluru</p>
+                        <p class="period">May 2026 – August 2026</p>
+                        <ul>
+                            <li>Designed an LLM-assisted Databricks/Spark pipeline to transform normalized BMS schemas into denormalized Gold views using EAV classification, pivoting, and automated join planning.</li>
+                            <li>Built a semantic ontology layer with 1,300+ facts integrated via MiniLM embeddings and Neo4j for GraphRAG-based, business-aware retrieval.</li>
+                            <li>Fine-tuned Gemma-2-9B-IT using two-stage 4-bit QLoRA and built an agentic Text-to-SQL pipeline achieving 80% SQL accuracy and 96% execution success.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Machine Learning Intern</h3>
+                        <p class="company">National Informatics Centre Services Inc. · Delhi</p>
+                        <p class="period">July 2024 – August 2024</p>
+                        <ul>
+                            <li>Developed a real-time object counting system that identifies individuals within predefined zones of interest in a video feed.</li>
+                            <li>Aimed at managing population density for safety, casualty prevention, and resource optimization.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects (Hover Cards) -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-desc">Hover over a card to view full project details.</p>
+            <div class="project-grid">
+                <div class="project-card" data-proj="1">
+                    <div class="proj-front">
+                        <h3>Multi-Label Image Classification &amp; Segmentation</h3>
+                        <div class="proj-tech">PyTorch · ResNet · DeepLabV3+ · OpenCV</div>
+                    </div>
+                    <div class="proj-back">
+                        <h3>Multi-Label Image Classification &amp; Segmentation</h3>
+                        <p>20-class multi-label classification using ImageNet-pretrained ResNet101 with focal loss, MixUp, and class-specific threshold optimization. Custom DeepLabV3+ with ASPP for semantic segmentation. Achieved 63.97% mIoU with statistically significant improvement over ResNet50 baseline.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-proj="2">
+                    <div class="proj-front">
+                        <h3>LLM Fine-Tuning &amp; Mathematical Reasoning</h3>
+                        <div class="proj-tech">PyTorch · SFT · DPO · GRPO · Transformers</div>
+                    </div>
+                    <div class="proj-back">
+                        <h3>LLM Fine-Tuning &amp; Alignment</h3>
+                        <p>Fine-tuned GPT-2 on GSM8K-style data using supervised fine-tuning with response-only loss masking. Implemented DPO and GRPO with KL regularization, evaluated using Pass@1 and Pass@K for improved mathematical reasoning.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-proj="3">
+                    <div class="proj-front">
+                        <h3>Blood Group Detection using Fingerprints</h3>
+                        <div class="proj-tech">TensorFlow · OpenCV · CNN</div>
+                    </div>
+                    <div class="proj-back">
+                        <h3>Blood Group Detection</h3>
+                        <p>CNN to predict human blood groups from fingerprint images using OpenCV preprocessing (noise reduction, contrast enhancement). Explored non-invasive biometric identification.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-proj="4">
+                    <div class="proj-front">
+                        <h3>Content-Based Movie Recommendation System</h3>
+                        <div class="proj-tech">Python · NLP · Scikit-learn · TMDB</div>
+                    </div>
+                    <div class="proj-back">
+                        <h3>Movie Recommender</h3>
+                        <p>Content-based recommender using TMDB dataset (5,000+ movies). Leveraged CountVectorizer, cosine similarity, Porter Stemmer, and TF-IDF for semantically relevant recommendations based on genres, keywords, cast, and plot.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-proj="5">
+                    <div class="proj-front">
+                        <h3>Credit Card Fraud Detection</h3>
+                        <div class="proj-tech">Python · Scikit-learn · Random Forest · SMOTE</div>
+                    </div>
+                    <div class="proj-back">
+                        <h3>Fraud Detection</h3>
+                        <p>Compared Logistic Regression, Decision Tree, and Random Forest on highly imbalanced data (0.17% fraud rate). Implemented SMOTE and StandardScaler; evaluated using Accuracy, Precision, Recall, F1-score, and ROC-AUC.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-proj="6">
+                    <div class="proj-front">
+                        <h3>TinyML Head Gesture Recognition</h3>
+                        <div class="proj-tech">Arduino · TensorFlow Lite · STM32 · UDP</div>
+                    </div>
+                    <div class="proj-back">
+                        <h3>Head Gesture Recognition</h3>
+                        <p>Cloud-free wearable assistive device translating 6 head gestures into OLED text and buzzer alerts. 12-axis dual-IMU architecture, INT8-quantized MLP on STM32 with 100% test accuracy and 15–40 ms on-device inference latency.</p>
+                    </div>
+                </div>
+            </div>
+            <p class="view-more" style="text-align:center; margin-top:2rem;">Explore more projects on my <a href="https://github.com/MaitreyiTiwari/MaitreyiTiwari" target="_blank">GitHub</a>.</p>
+        </div>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="ach-icon">🏆</div>
+                    <h3>GATE 2025</h3>
+                    <p>Secured <strong>99.66 percentile</strong> in Computer Science Engineering with a GATE score of <strong>761</strong>.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="ach-icon">🎓</div>
+                    <h3>IISc-Mallika Fellowship</h3>
+                    <p>Awarded the prestigious MTech fellowship for academic excellence and research potential at IISc Bengaluru.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="ach-icon">🏀</div>
+                    <h3>Basketball Silver Medal</h3>
+                    <p>Won Silver representing the Department of CDS at the EECS Sports Meet 2025, IISc Bengaluru.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Section -->
+    <section id="cv" class="section">
+        <div class="container">
+            <h2 class="section-title">Curriculum Vitae</h2>
+            <div class="cv-wrap">
+                <div class="cv-preview">
+                    <h3>Maitreyi Tiwari</h3>
+                    <p class="cv-role">M.Tech Student · IISc Bengaluru | AI/ML Engineer</p>
+                    <p class="cv-summary">Passionate about Machine Learning, Edge-AI, and NLP. Experienced in LLM fine-tuning, GraphRAG, Spark pipelines, and deploying ML models on edge devices.</p>
+
+                    <div class="cv-block">
+                        <h4>Education</h4>
+                        <p><strong>Indian Institute of Science</strong> — M.Tech Computational &amp; Data Science (2025 – Present), Bengaluru</p>
+                        <p><strong>GB Pant University</strong> — B.Tech Computer Engineering (2021 – 2025), Pantnagar</p>
+                        <p><strong>Cynthia Senior Secondary School</strong> — Intermediate 97.2% (2021) · High School 99% (2019)</p>
+                    </div>
+
+                    <div class="cv-block">
+                        <h4>Experience</h4>
+                        <p><strong>Honeywell Technologies</strong> — AI Intern (May 2026 – Aug 2026)</p>
+                        <p><strong>NICSI</strong> — Machine Learning Intern (Jul 2024 – Aug 2024)</p>
+                    </div>
+
+                    <div class="cv-block">
+                        <h4>Achievements</h4>
+                        <p>GATE 2025: 99.66 percentile (Score 761) · IISc-Mallika Women MTech Fellowship</p>
+                    </div>
+
+                    <div class="cv-block">
+                        <h4>Skills</h4>
+                        <p>Machine Learning, Edge-AI, NLP, PyTorch, TensorFlow, Python, C, SQL, Git, DBMS, DSA, Linear Algebra, Computer Architecture, Probability &amp; Statistics.</p>
+                    </div>
+                </div>
+
+                <div class="cv-actions">
+                    <a href="assets/cv.pdf" download class="btn btn-primary" id="cvDownload">Download CV (PDF)</a>
+                    <p class="cv-note">To make this work, place your <code>cv.pdf</file> inside the <code>assets/</code> folder.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Get <span class="accent">In Touch</span></h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">✉</span>
+                        <div>
+                            <strong>Email</strong>
+                            <a href="mailto:maitreyitiwari18@gmail.com">maitreyitiwari18@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">💼</span>
+                        <div>
+                            <strong>LinkedIn</strong>
+                            <a href="https://linkedin.com/in/maitreyi-tiwari-574900264" target="_blank">linkedin.com/in/maitreyi-tiwari-574900264</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🐙</span>
+                        <div>
+                            <strong>GitHub</strong>
+                            <a href="https://github.com/MaitreyiTiwari/MaitreyiTiwari" target="_blank">github.com/MaitreyiTiwari/MaitreyiTiwari</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required placeholder="you@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required placeholder="How can I help?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Maitreyi Tiwari. Built with ❤️, #F4C2C2, and cute doodles.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
