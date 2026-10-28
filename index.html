@@ -4,21 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maitreyi Tiwari | M.Tech Computational & Data Science</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Cute SVG Doodles Background Layer -->
-    <div class="doodles" id="doodles"></div>
+    <!-- Static subtle doodles -->
+    <div class="doodles" id="doodles">
+        <svg class="doodle doodle-top-left" width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30 2 C15 2 3 14 3 29 C3 44 15 56 30 56 C45 56 57 44 57 29 C57 14 45 2 30 2 Z" fill="none" stroke="var(--accent)" stroke-width="2" opacity="0.15"/>
+            <circle cx="30" cy="30" r="4" fill="var(--accent)" opacity="0.3"/>
+        </svg>
+        <svg class="doodle doodle-bottom-right" width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 55 Q55 55 55 50 Q55 45 50 45 Q45 45 45 50 Q45 55 50 55 Z" fill="none" stroke="var(--accent)" stroke-width="2" opacity="0.15"/>
+            <path d="M52 47 Q50 49 48 47" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+        </svg>
+    </div>
 
-    <!-- Navigation -->
     <header>
         <div class="container nav-container">
             <a href="#" class="logo">Maitreyi<span>Tiwari</span></a>
-
             <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
             <button class="mobile-menu" id="mobileMenu" aria-label="Toggle menu">☰</button>
-
             <nav class="main-nav" id="mainNav">
                 <ul>
                     <li><a href="#hero">Home</a></li>
@@ -35,35 +44,32 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section id="hero" class="hero">
         <div class="container">
             <div class="hero-content">
                 <div class="avatar-wrap">
-                    <!-- Placeholder avatar (replace with your photo later) -->
                     <div class="avatar-placeholder" aria-label="Profile picture">
-                        <svg width="130" height="130" viewBox="0 0 130 130" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
                             <defs>
                                 <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#F4C2C2;stop-opacity:0.4" />
-                                    <stop offset="100%" style="stop-color:#F4C2C2;stop-opacity:0.1" />
+                                    <stop offset="0%" style="stop-color:var(--accent);stop-opacity:0.3" />
+                                    <stop offset="100%" style="stop-color:var(--accent);stop-opacity:0.05" />
                                 </linearGradient>
                             </defs>
-                            <circle cx="65" cy="65" r="55" fill="url(#grad1)" />
-                            <circle cx="65" cy="65" r="50" fill="none" stroke="#F4C2C2" stroke-width="3" opacity="0.6"/>
-                            <path d="M45 65 Q65 35 85 65" fill="none" stroke="#F4C2C2" stroke-width="2" opacity="0.5"/>
-                            <circle cx="57" cy="57" r="3.5" fill="#F4C2C2"/>
-                            <circle cx="73" cy="57" r="3.5" fill="#F4C2C2"/>
-                            <path d="M57 78 Q65 92 73 78" fill="none" stroke="#F4C2C2" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="60" cy="60" r="50" fill="url(#grad1)" />
+                            <circle cx="60" cy="60" r="45" fill="none" stroke="var(--accent)" stroke-width="2.5" opacity="0.5"/>
+                            <path d="M42 60 Q60 32 78 60" fill="none" stroke="var(--accent)" stroke-width="2" opacity="0.4"/>
+                            <circle cx="52" cy="52" r="3" fill="var(--accent)"/>
+                            <circle cx="68" cy="52" r="3" fill="var(--accent)"/>
+                            <path d="M52 72 Q60 84 68 72" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
                         </svg>
-                        <div class="doodle-heart"></div>
                     </div>
                 </div>
 
                 <h1>Hi, I'm <span>Maitreyi Tiwari</span></h1>
                 <p class="hero-title">M.Tech in Computational &amp; Data Science</p>
                 <p class="hero-sub">Indian Institute of Science · Bengaluru, Karnataka</p>
-                <p class="hero-intro">AI/ML enthusiast passionate about LLMs, Edge-AI, NLP, and building intelligent systems that solve real-world problems.</p>
+                <p class="hero-intro">AI/ML enthusiast focused on LLMs, Edge-AI, NLP, and building intelligent systems that solve real-world problems.</p>
 
                 <div class="hero-actions">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -71,40 +77,36 @@
                 </div>
 
                 <div class="hero-social">
-                    <a href="https://linkedin.com/in/maitreyi-tiwari-574900264" target="_blank" aria-label="LinkedIn">in</a>
-                    <a href="https://github.com/MaitreyiTiwari/MaitreyiTiwari" target="_blank" aria-label="GitHub">🐙</a>
-                    <a href="mailto:maitreyitiwari18@gmail.com" aria-label="Email">✉</a>
+                    <a href="https://linkedin.com/in/maitreyi-tiwari-574900264" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="https://github.com/MaitreyiTiwari/MaitreyiTiwari" target="_blank" aria-label="GitHub">GitHub</a>
+                    <a href="mailto:maitreyitiwari18@gmail.com" aria-label="Email">maitreyitiwari18@gmail.com</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About -->
     <section id="about" class="section">
         <div class="container">
             <h2 class="section-title">About <span class="accent">Me</span></h2>
             <div class="about-grid">
                 <div class="about-text">
-                    <p>I'm currently pursuing my <strong>M.Tech in Computational and Data Science</strong> at the <strong>Indian Institute of Science (IISc), Bengaluru</strong>. My journey began with a B.Tech in Computer Engineering from GB Pant University, where I graduated with a CGPA of 8.10.</p>
-                    <p>I love working at the intersection of <strong>Machine Learning, NLP, and Edge-AI</strong>. Whether it's fine-tuning LLMs, building GraphRAG systems, or deploying TinyML models on microcontrollers, I enjoy turning research into practical applications.</p>
-                    <p>Outside of code, you'll find me on the basketball court or organizing technical events for my department.</p>
+                    <p>I am currently pursuing my <strong>M.Tech in Computational and Data Science</strong> at the <strong>Indian Institute of Science (IISc), Bengaluru</strong>. I completed my B.Tech in Computer Engineering from GB Pant University with a CGPA of 8.10.</p>
+                    <p>My work sits at the intersection of <strong>Machine Learning, NLP, and Edge-AI</strong>. I enjoy fine-tuning LLMs, building GraphRAG systems, and deploying models on edge devices.</p>
+                    <p>Outside of academics, I play basketball and help organize technical events for my department.</p>
                 </div>
                 <div class="about-stats">
-                    <div class="stat-card"><div class="stat-num">2+</div><div class="stat-label">Internships</div></div>
-                    <div class="stat-card"><div class="stat-num">11+</div><div class="stat-label">Projects</div></div>
+                    <div class="stat-card"><div class="stat-num">2</div><div class="stat-label">Internships</div></div>
+                    <div class="stat-card"><div class="stat-num">11</div><div class="stat-label">Projects</div></div>
                     <div class="stat-card"><div class="stat-num">99.66</div><div class="stat-label">GATE Percentile</div></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Education (Hover Cards) -->
     <section id="education" class="section bg-alt">
         <div class="container">
             <h2 class="section-title">Education</h2>
-            <p class="section-desc">Hover over a card to see more details.</p>
             <div class="edu-grid">
-                <!-- IISc -->
                 <div class="edu-card" data-edu="iisc">
                     <div class="edu-front">
                         <h3>Indian Institute of Science</h3>
@@ -114,14 +116,13 @@
                     </div>
                     <div class="edu-back">
                         <h3>Indian Institute of Science</h3>
-                        <p>Currently researching Hypergraph Neural Networks and over-squashing remedies via curvature-guided hypergraph rewiring (M.Tech Thesis, Ongoing).</p>
+                        <p>Researching Hypergraph Neural Networks and over-squashing remedies via curvature-guided hypergraph rewiring (M.Tech Thesis, Ongoing).</p>
                         <ul>
                             <li><strong>Fellowship:</strong> IISc-Mallika Women MTech Fellowship</li>
                             <li><strong>Role:</strong> Student Representative, Gymkhana Students Affairs Committee (2026)</li>
                         </ul>
                     </div>
                 </div>
-                <!-- GB Pant -->
                 <div class="edu-card" data-edu="gbpuat">
                     <div class="edu-front">
                         <h3>GB Pant University of Agriculture and Technology</h3>
@@ -138,7 +139,6 @@
                         </ul>
                     </div>
                 </div>
-                <!-- School 12th -->
                 <div class="edu-card" data-edu="school12">
                     <div class="edu-front">
                         <h3>Cynthia Senior Secondary School</h3>
@@ -151,7 +151,6 @@
                         <p>Science stream with strong academic performance.</p>
                     </div>
                 </div>
-                <!-- School 10th -->
                 <div class="edu-card" data-edu="school10">
                     <div class="edu-front">
                         <h3>Cynthia Senior Secondary School</h3>
@@ -161,14 +160,13 @@
                     </div>
                     <div class="edu-back">
                         <h3>Cynthia Senior Secondary School</h3>
-                        <p>Perfect academic record with 99% in board examinations.</p>
+                        <p>99% in board examinations.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills -->
     <section id="skills" class="section">
         <div class="container">
             <h2 class="section-title">Skills &amp; Tools</h2>
@@ -186,7 +184,7 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Systems &amp> Tools</h3>
+                    <h3>Systems &amp; Tools</h3>
                     <div class="skill-tags">
                         <span>Git</span><span>DBMS</span><span>DSA</span><span>Operating Systems</span><span>Computer Networks</span><span>Compiler Design</span><span>Streamlit</span><span>LangGraph</span><span>Spark</span><span>Databricks</span>
                     </div>
@@ -201,7 +199,6 @@
         </div>
     </section>
 
-    <!-- Experience -->
     <section id="experience" class="section bg-alt">
         <div class="container">
             <h2 class="section-title">Experience</h2>
@@ -213,9 +210,9 @@
                         <p class="company">Honeywell Technologies · Bengaluru</p>
                         <p class="period">May 2026 – August 2026</p>
                         <ul>
-                            <li>Designed an LLM-assisted Databricks/Spark pipeline to transform normalized BMS schemas into denormalized Gold views using EAV classification, pivoting, and automated join planning.</li>
-                            <li>Built a semantic ontology layer with 1,300+ facts integrated via MiniLM embeddings and Neo4j for GraphRAG-based, business-aware retrieval.</li>
-                            <li>Fine-tuned Gemma-2-9B-IT using two-stage 4-bit QLoRA and built an agentic Text-to-SQL pipeline achieving 80% SQL accuracy and 96% execution success.</li>
+                            <li>Designed an LLM-assisted Databricks/Spark pipeline to transform normalized BMS schemas into denormalized Gold views.</li>
+                            <li>Built a semantic ontology layer with 1,300+ facts integrated via MiniLM embeddings and Neo4j for GraphRAG-based retrieval.</li>
+                            <li>Fine-tuned Gemma-2-9B-IT using 4-bit QLoRA and built an agentic Text-to-SQL pipeline achieving 80% SQL accuracy and 96% execution success.</li>
                         </ul>
                     </div>
                 </div>
@@ -226,8 +223,8 @@
                         <p class="company">National Informatics Centre Services Inc. · Delhi</p>
                         <p class="period">July 2024 – August 2024</p>
                         <ul>
-                            <li>Developed a real-time object counting system that identifies individuals within predefined zones of interest in a video feed.</li>
-                            <li>Aimed at managing population density for safety, casualty prevention, and resource optimization.</li>
+                            <li>Developed a real-time object counting system for predefined zones in a video feed.</li>
+                            <li>Focused on population density management for safety and resource optimization.</li>
                         </ul>
                     </div>
                 </div>
@@ -235,11 +232,9 @@
         </div>
     </section>
 
-    <!-- Projects (Hover Cards) -->
     <section id="projects" class="section">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
-            <p class="section-desc">Hover over a card to view full project details.</p>
             <div class="project-grid">
                 <div class="project-card" data-proj="1">
                     <div class="proj-front">
@@ -268,7 +263,7 @@
                     </div>
                     <div class="proj-back">
                         <h3>Blood Group Detection</h3>
-                        <p>CNN to predict human blood groups from fingerprint images using OpenCV preprocessing (noise reduction, contrast enhancement). Explored non-invasive biometric identification.</p>
+                        <p>CNN to predict human blood groups from fingerprint images using OpenCV preprocessing. Explored non-invasive biometric identification.</p>
                     </div>
                 </div>
                 <div class="project-card" data-proj="4">
@@ -278,7 +273,7 @@
                     </div>
                     <div class="proj-back">
                         <h3>Movie Recommender</h3>
-                        <p>Content-based recommender using TMDB dataset (5,000+ movies). Leveraged CountVectorizer, cosine similarity, Porter Stemmer, and TF-IDF for semantically relevant recommendations based on genres, keywords, cast, and plot.</p>
+                        <p>Content-based recommender using TMDB dataset (5,000+ movies). Leveraged CountVectorizer, cosine similarity, Porter Stemmer, and TF-IDF for semantically relevant recommendations.</p>
                     </div>
                 </div>
                 <div class="project-card" data-proj="5">
@@ -298,15 +293,14 @@
                     </div>
                     <div class="proj-back">
                         <h3>Head Gesture Recognition</h3>
-                        <p>Cloud-free wearable assistive device translating 6 head gestures into OLED text and buzzer alerts. 12-axis dual-IMU architecture, INT8-quantized MLP on STM32 with 100% test accuracy and 15–40 ms on-device inference latency.</p>
+                        <p>Cloud-free wearable assistive device translating 6 head gestures into OLED text and buzzer alerts. INT8-quantized MLP on STM32 with 100% test accuracy and 15–40 ms on-device inference latency.</p>
                     </div>
                 </div>
             </div>
-            <p class="view-more" style="text-align:center; margin-top:2rem;">Explore more projects on my <a href="https://github.com/MaitreyiTiwari/MaitreyiTiwari" target="_blank">GitHub</a>.</p>
+            <p class="view-more" style="text-align:center; margin-top:2rem;">Explore more projects on <a href="https://github.com/MaitreyiTiwari/MaitreyiTiwari" target="_blank">GitHub</a>.</p>
         </div>
     </section>
 
-    <!-- Achievements -->
     <section id="achievements" class="section bg-alt">
         <div class="container">
             <h2 class="section-title">Achievements</h2>
@@ -330,7 +324,6 @@
         </div>
     </section>
 
-    <!-- CV Section -->
     <section id="cv" class="section">
         <div class="container">
             <h2 class="section-title">Curriculum Vitae</h2>
@@ -366,13 +359,11 @@
 
                 <div class="cv-actions">
                     <a href="assets/cv.pdf" download class="btn btn-primary" id="cvDownload">Download CV (PDF)</a>
-                    <p class="cv-note">To make this work, place your <code>cv.pdf</file> inside the <code>assets/</code> folder.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact -->
     <section id="contact" class="section bg-alt">
         <div class="container">
             <h2 class="section-title">Get <span class="accent">In Touch</span></h2>
@@ -423,7 +414,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Maitreyi Tiwari. Built with ❤️, #F4C2C2, and cute doodles.</p>
+            <p>&copy; 2026 Maitreyi Tiwari.</p>
         </div>
     </footer>
 
